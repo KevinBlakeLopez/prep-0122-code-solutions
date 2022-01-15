@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Complete the HTML here -->
+  <div class="container">
+    <h1>Indiana Jones</h1>
+    <div class="row">
+
+      <div class="column">
+
+        <img src="images/raiders.jpg">
+        <h3>Raiders of the Lost Ark</h3>
+        <p>Indiana Jones races against the Nazis to recover the Ark of the Covenant in Egypt.</p>
+
+      </div>
+      <div class="column">
+
+        <img src="images/temple.jpg">
+        <h3>Indiana Jones and the Temple of Doom</h3>
+        <p>Indiana Jones travels to India to find the stolen Shiva lingam stones. He finds that the local monarchy is
+        controlled by Kali worshippers.</p>
+      </div>
+      <div class="column">
+
+        <img src="images/crusade.jpg">
+        <h3>Indiana Jones and the Last Crusade</h3>
+        <p>Indiana Jones teams up with his father in the search for the Holy Grail.</p>
+      </div>
+
+
+    </div>
+  </div>
+</body>
+</html>
